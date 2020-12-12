@@ -1,0 +1,27 @@
+// Code in Java wrote by Edson Henrique Hirano in 12-12-2020
+
+import java.util.Scanner;
+ 
+public class Team {
+ 
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int linhas = sc.nextInt();
+		int contador = 0;
+		
+		for(int i=1;i<=linhas;i++) {
+			int p = sc.nextInt();
+			int v = sc.nextInt();
+			int t = sc.nextInt();
+			
+			if(p==1 && v==1 || p==1 && t==1) {
+				contador++;
+			} else if (v==1 && t==1) {
+				contador ++;
+			} else {continue;}			
+		}
+		System.out.println(contador);	
+	}
+}
