@@ -1,0 +1,38 @@
+// Code wrote by Edson Henrique Hirano in 13-12-2020
+
+import java.util.Scanner;
+
+public class BitPlusPlus {
+
+	public static void main(String[] args) {
+		
+		int x = 0;
+		String operacao;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		
+		for(int i=0;i<n;i++) {
+			operacao = sc.next();
+			
+			switch(operacao) {
+				case "X++":
+					x++;
+					break;
+				case "++X":
+					++x;
+					break;
+				case "X--":
+					x--;
+					break;
+				case "--X":
+					--x;
+					break;
+				default:
+					break;
+			}
+		}
+		System.out.println(x);
+	}
+}
